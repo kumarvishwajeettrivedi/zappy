@@ -6,7 +6,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="md:col-span-1">
-            <h3 className="text-3xl font-bold mb-6">Zappy</h3>
+            <h3 className="text-3xl font-bold mb-6">Logizee</h3>
           </div>
 
           {/* For Businesses */}
@@ -52,11 +52,11 @@ const Footer = () => {
             <div className="text-sm">
               <p className="hover:text-white transition-colors font-semibold">Contact Us</p>
               <ul className="mt-2 space-y-1 text-gray-300">
-                <li>
+{/*                 <li>
                   <a href="mailto:office@logizee.com" className="hover:text-white transition-colors">
                     office@logizee.com
                   </a>
-                </li>
+                </li> */}
                 <li>
                   <a href="mailto:office.logizee@gmail.com" className="hover:text-white transition-colors">
                   office.logizee@gmail.com
