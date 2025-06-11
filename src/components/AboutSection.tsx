@@ -31,25 +31,10 @@ const AboutSection = () => {
               </p>
             </div>
           </div>
-        </div>
+      
 
-        {/* Floating elements */}
-        <div className="relative mt-16">
-          <div className="absolute right-10 top-0">
-            <div className="w-32 h-32 bg-gradient-to-br from-zappy-orange to-zappy-orange-light rounded-2xl flex items-center justify-center animate-float">
-              <span className="text-4xl">🛍️</span>
-            </div>
-          </div>
-          
-          <div className="absolute left-20 bottom-0">
-            <div className="w-40 h-24 bg-gradient-to-r from-zappy-orange-light to-zappy-orange rounded-xl flex items-center justify-center animate-float" style={{animationDelay: '1s'}}>
-              <span className="text-3xl">🍔</span>
-            </div>
-          </div>
-          
-          <div className="absolute right-1/3 bottom-10">
-            <div className="w-24 h-24 bg-gray-200 rounded-xl animate-float" style={{animationDelay: '2s'}}></div>
-          </div>
+       
+        
         </div>
       </div>
     </section>
