@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap');
+
+.hero-section {
+    position: relative;
+    min-height: 99vh;
+    background: radial-gradient(circle, #e8a16f 0%, #f7a259 60%, #f58f45 100%);
+    overflow: hidden;
+    color: white;
+    border-bottom-left-radius: 50% 12%;
+    border-bottom-right-radius: 50% 12%;
+  }
+  
+  .container {
+    position: relative;
+    z-index: 10;
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    min-height: 99vh;
+  }
+  
+  .content-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* default mobile view */
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  
+  @media (min-width: 768px) {
+    .content-grid {
+      grid-template-columns: 1fr auto 1fr; /* 3 columns: text | doodle | mockup */
+      text-align: left;
+    }
+  }
+  
+  .doodle-container {
+ 
+   
+    align-items: center;
+    filter: brightness(1.4) contrast(0.4) grayscale(0.3);
+    animation-fill-mode: both;
+    /* Remove position: absolute */
+    /* Let it behave as a middle column item */
+  }
+  
+  .doodle-container img {
+    width: 560px;
+    height: 600px;
+
+  }
+  
+  
+  .text-content {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .hero-title {
+    font-family: "Sen", sans-serif, bolder;
+    font-size: 6.2rem;
+    font-weight:800;
+
+    margin-bottom: 2.8rem;
+    line-height: 1.2;
+  }
+  
+ 
+  
+  .hero-subtitle {
+    font-size: 2.1rem;
+    opacity: 0.8;
+    width: 100%;
+    font-weight: 300;
+    word-spacing: 0.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .crafted-text {
+    font-size: 1.2rem;
+    opacity: 0.8;
+    font-weight: 300;
+    margin-bottom: 8rem;
+  }
+  
+  .download-section .download-text {
+    font-size: 1.2rem;
+    opacity: 0.8;
+    font-weight: 300;
+   
+    margin-bottom: -4rem;
+  }
+  
+  .play-button {
+    background-color: black;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 0.75rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .play-button:hover {
+    transform: scale(1.05);
+    background-color: #222;
+  }
+  
+  .play-icon {
+    width: 24px;
+    height: 24px;
+    background: linear-gradient(to right, #4ade80, #3b82f6);
+    border-radius: 0.375rem;
+  }
+  
+  .mockup-wrapper {
+    display: flex;
+    position: absolute;
+    left: 62%;
+    justify-content: center;
+    margin-left: 15%;
+    animation: slideUpFadeIn 1.2s ease-out 0.3s;
+    animation-fill-mode: both;
+  }
+  
+  
+  .mockup-box {
+    width: 22rem;
+    height: 45rem;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(6px);
+    border-radius: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .mockup-content {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .qr-title {
+    font-size: 1.1rem;
+  }
+  
+  .qr-subtitle {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+  }
+  
+  .phone-notch {
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5rem;
+    height: 1.5rem;
+    background-color: black;
+    border-radius: 1rem;
+  }
+  
+  .scroll-indicator {
+    position: absolute;
+    bottom: 2rem;
+    left: 47%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row; /* changed from column */
+    align-items: center;
+    gap: 0.5rem; /* spacing between text and arrows */
+    color: rgba(255, 255, 255, 0.8);
+    animation: bounce 2s infinite;
+    z-index: 100;
+  }
+  
+  .scroll-text {
+    font-size: 0.875rem;
+    z-index: 100;
+  }
+  
+  .arrow-down {
+    fill: white;
+    z-index: 100;
+    width: 20px;
+    height: 20px;
+  }
+  
+  @keyframes slideUpFadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(80px); /* Stronger upward motion */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+ 
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(15px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0) translateX(-50%);
+    }
+    50% {
+      transform: translateY(-8px) translateX(-50%);
+    }
+  }
+  

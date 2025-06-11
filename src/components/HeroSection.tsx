@@ -1,69 +1,63 @@
+import React from "react";
+import "./styles/herosection.css";
+import playstoreIcon from '../assets/images/playstore.png';
+import doodlePath from '../assets/images/Group 16.png';
 
-import { ArrowDown } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen zappy-gradient overflow-hidden">
-      {/* Decorative elements */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 left-10 w-8 h-8 border-2 border-white rounded-full animate-float"></div>
-      </div>
-
-      <div className="relative z-10 container mx-auto px-6 py-20 flex items-center min-h-screen">
-        <div className="grid md:grid-cols-2 gap-12 items-center w-full">
-          {/* Left Content */}
-          <div className="text-white animate-fade-in">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-              Zappy
-            </h1>
-            <p className="text-xl md:text-2xl mb-4 opacity-90 leading-relaxed">
+    <section className="hero-section">
+      <div className="container">
+        <div className="content-grid">
+          {/* Left Side */}
+          <div className="text-content">
+            <p className="hero-title">Logizee</p>
+            <p className="hero-subtitle">
               One roof solution for all kinds of delivery need
             </p>
-            <p className="text-lg mb-8 opacity-80">
-              Crafted with ❤️ in Sikkim
-            </p>
-            
-            <div className="mb-8">
-              <p className="text-lg mb-4">Get it on</p>
-              <Button 
-                className="bg-black hover:bg-gray-800 text-white px-8 py-6 rounded-lg flex items-center gap-3 text-lg font-semibold transition-transform hover:scale-105"
-                onClick={() => window.open('#', '_blank')}
-              >
-                <div className="flex items-center gap-2">
-                  <div className="w-6 h-6 bg-gradient-to-r from-green-400 to-blue-500 rounded"></div>
-                  <span>Google Play</span>
-                </div>
-              </Button>
+            <p className="crafted-text">Crafted with ❤️ in Sikkim</p>
+
+            <div className="download-section">
+              <p className="download-text">Get it on</p>
+              <img
+                src={playstoreIcon}
+                alt="Download on Google Play"
+                style={{ width: "230px", height: "auto", cursor: "pointer" }}
+                onClick={() => window.open("#", "_blank")}
+              />
+
+
             </div>
           </div>
+{/* doodle icons */}
+<div className="doodle-container">
+    <img src={doodlePath} alt="doodle-animation" />
+  </div>
 
-          {/* Right Content - Phone Mockup */}
-          <div className="flex justify-center animate-fade-in" style={{animationDelay: '0.3s'}}>
-            <div className="relative">
-              <div className="w-80 h-96 bg-white/20 backdrop-blur-sm rounded-3xl border border-white/30 flex items-center justify-center">
-                <div className="text-center text-white/70">
-                  <p className="text-lg">Scan the QR code</p>
-                  <p className="text-sm mt-2">to Download the App</p>
-                </div>
+          {/* Right Side - QR Phone UI */}
+          <div className="mockup-wrapper">
+            <div className="mockup-box">
+              <div className="mockup-content">
+                <p className="qr-title">Scan the QR code</p>
+                <p className="qr-subtitle">to Download the App</p>
               </div>
-              {/* Phone notch */}
-              <div className="absolute top-4 left-1/2 transform -translate-x-1/2 w-32 h-6 bg-black rounded-full"></div>
             </div>
+            <div className="phone-notch"></div>
           </div>
         </div>
       </div>
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="flex flex-col items-center text-white/80">
-          <span className="text-sm mb-2">Scroll down</span>
-          <ArrowDown size={24} />
-        </div>
+      {/* Scroll Indicator */}
+      <div className="scroll-indicator">
+        <span className="scroll-text">Scroll down</span>
+        <svg className="arrow-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M12 16.5L6 10.5h12Z" />
+        </svg>
       </div>
 
-      {/* Curved bottom */}
-      <div className="absolute bottom-0 left-0 right-0 h-20 bg-#ff2254 zappy-curve"></div>
+
+      {/* Bottom Curve */}
+      <div className="bottom-curve"></div>
     </section>
   );
 };
