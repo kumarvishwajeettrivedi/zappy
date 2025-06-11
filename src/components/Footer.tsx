@@ -73,7 +73,7 @@ const Footer = () => {
         <div className="mt-12 pt-8 border-t border-gray-700 text-center text-gray-400 text-sm">
           <p>
             By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners.<br />
-            2023 © Logizee Solutions LLP. All rights reserved.
+            2025 © Logizee Solutions LLP. All rights reserved.
           </p>
         </div>
       </div>
