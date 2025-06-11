@@ -15,7 +15,7 @@ const HeroSection = () => {
           {/* Left Content */}
           <div className="text-white animate-fade-in">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-              Zappy
+              Logizee
             </h1>
             <p className="text-xl md:text-2xl mb-4 opacity-90 leading-relaxed">
               One roof solution for all kinds of delivery need
