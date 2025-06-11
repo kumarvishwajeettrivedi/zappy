@@ -124,7 +124,7 @@
     position: absolute;
     left: 54%;
     justify-content: center;
-    margin-left: 15%;
+    margin-left: 20%;
     animation: slideUpFadeIn 1.2s ease-out 0.3s;
     animation-fill-mode: both;
   }
@@ -132,7 +132,7 @@
   
   .mockup-box {
     width: 22rem;
-    height: 45rem;
+    height: 40rem;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(6px);
     border-radius: 1.5rem;
