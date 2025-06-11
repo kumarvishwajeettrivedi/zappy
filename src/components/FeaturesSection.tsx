@@ -106,7 +106,7 @@ const FeaturesSection = () => {
               {/* Left side */}
               <div className="text-center">
                 <p className="text-gray-600 text-lg mb-8 leading-relaxed">
-                  We help you Send a parcel from a place to other making you more connected with Zappy
+                  We help you Send a parcel from a place to other making you more connected with Logizee
                 </p>
                 <div className="w-64 h-48 bg-gray-100 rounded-2xl mx-auto flex items-center justify-center">
                   <span className="text-gray-400">Illustration Placeholder</span>
