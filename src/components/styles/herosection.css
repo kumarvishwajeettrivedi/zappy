@@ -131,8 +131,8 @@
   
   
   .mockup-box {
-    width: 22rem;
-    height: 40rem;
+    width: 21rem;
+    height: 42rem;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(6px);
     border-radius: 1.5rem;

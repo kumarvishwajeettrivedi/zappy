@@ -1,0 +1,112 @@
+.features-section {
+    position: relative;
+    background: linear-gradient(to right, #1e1e1e, #3c3c3c);
+    padding: 6rem 1rem;
+    text-align: center;
+  }
+  
+  .features-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 0.15rem;
+    margin-bottom: 4rem;
+  }
+  
+  .features-wrapper {
+    position: relative;
+    max-width: 1100px;
+    height: 500px;
+    margin: 0 auto;
+  }
+  
+  .center-mobile {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 250px;
+    height: 200px;
+    background: #d3d3d3;
+    border-radius: 20px;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  
+  /* All feature boxes */
+  .feature-box {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .feature-square {
+    width: 80px;
+    height: 80px;
+    background-color: #ccc;
+    border-radius: 12px;
+    z-index: 2;
+  }
+  
+  .feature-text {
+    color: #ff7b00;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-top: 0.5rem;
+    max-width: 120px;
+    text-align: center;
+  }
+  
+  /* Arrows: use pseudo-elements or SVG backgrounds later if needed */
+  .arrow {
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    position: relative;
+  }
+  
+  .arrow::after {
+    content: "";
+    position: absolute;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    transform: rotate(45deg);
+  }
+  
+  /* Positioning each box */
+  .top-left {
+    top: 0;
+    left: 0;
+  }
+  
+  .center-left {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  
+  .bottom-left {
+    bottom: 0;
+    left: 0;
+  }
+  
+  .top-center {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .top-right {
+    top: 0;
+    right: 0;
+  }
+  
+  .bottom-right {
+    bottom: 0;
+    right: 0;
+  }
+  

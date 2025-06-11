@@ -1,99 +1,50 @@
+import React from "react";
+import "./styles/FeaturesSection.css";
+
+const features = [
+  {
+    title: "Earn extra on your way",
+    position: "top-left",
+  },
+  {
+    title: "Make online presence",
+    position: "center-left",
+  },
+  {
+    title: "Shop Fresh and fast",
+    position: "bottom-left",
+  },
+  {
+    title: "Send anything form A to B",
+    position: "top-center",
+  },
+  {
+    title: "Shop form Your fav Store",
+    position: "top-right",
+  },
+  {
+    title: "Same as store price",
+    position: "bottom-right",
+  },
+];
 
 const FeaturesSection = () => {
-  const features = [
-    {
-      title: "Earn extra on your way",
-      position: "top-left",
-    },
-    {
-      title: "Make online presence",
-      position: "center-left", 
-    },
-    {
-      title: "Shop Fresh and fast",
-      position: "bottom-left",
-    },
-    {
-      title: "Send anything form A to B",
-      position: "top-center",
-    },
-    {
-      title: "Shop form Your fav Store",
-      position: "top-right",
-    },
-    {
-      title: "Same as store price",
-      position: "center-right",
-    }
-  ];
-
   return (
-    <section className="py-20 bg-gradient-to-br from-gray-900 to-gray-800 relative overflow-hidden">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-8 tracking-wider">
-            Features
-          </h2>
-        </div>
+    <section className="features-section">
+      <h2 className="features-title">Features</h2>
 
-        {/* Features Grid */}
-        <div className="relative max-w-4xl mx-auto">
-          {/* Central large rectangle */}
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-40 bg-gray-700 rounded-2xl"></div>
+      <div className="features-wrapper">
+        {/* Center Mobile */}
+        <div className="center-mobile" />
 
-          {/* Feature boxes positioned around the center */}
-          <div className="relative h-96">
-            {/* Top left */}
-            <div className="absolute top-0 left-0 w-32 h-32 bg-gray-600 rounded-xl flex items-center justify-center group hover:bg-zappy-orange transition-colors duration-300">
-              <div className="text-center">
-                <div className="w-4 h-4 bg-zappy-orange rounded-full mx-auto mb-2 group-hover:bg-white"></div>
-                <p className="text-zappy-orange text-sm font-medium group-hover:text-white">Earn extra on your way</p>
-              </div>
-            </div>
-
-            {/* Top center */}
-            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-32 h-32 bg-gray-600 rounded-xl flex items-center justify-center group hover:bg-zappy-orange transition-colors duration-300">
-              <div className="text-center">
-                <div className="w-4 h-4 bg-zappy-orange rounded-full mx-auto mb-2 group-hover:bg-white"></div>
-                <p className="text-zappy-orange text-sm font-medium group-hover:text-white">Send anything from A to B</p>
-              </div>
-            </div>
-
-            {/* Top right */}
-            <div className="absolute top-0 right-0 w-32 h-32 bg-gray-600 rounded-xl flex items-center justify-center group hover:bg-zappy-orange transition-colors duration-300">
-              <div className="text-center">
-                <div className="w-4 h-4 bg-zappy-orange rounded-full mx-auto mb-2 group-hover:bg-white"></div>
-                <p className="text-zappy-orange text-sm font-medium group-hover:text-white">Shop from Your fav Store</p>
-              </div>
-            </div>
-
-            {/* Center left */}
-            <div className="absolute top-1/2 left-0 transform -translate-y-1/2 w-32 h-32 bg-gray-600 rounded-xl flex items-center justify-center group hover:bg-zappy-orange transition-colors duration-300">
-              <div className="text-center">
-                <div className="w-4 h-4 bg-zappy-orange rounded-full mx-auto mb-2 group-hover:bg-white"></div>
-                <p className="text-zappy-orange text-sm font-medium group-hover:text-white">Make online presence</p>
-              </div>
-            </div>
-
-            {/* Center right */}
-            <div className="absolute top-1/2 right-0 transform -translate-y-1/2 w-32 h-32 bg-gray-600 rounded-xl flex items-center justify-center group hover:bg-zappy-orange transition-colors duration-300">
-              <div className="text-center">
-                <div className="w-4 h-4 bg-zappy-orange rounded-full mx-auto mb-2 group-hover:bg-white"></div>
-                <p className="text-zappy-orange text-sm font-medium group-hover:text-white">Same as store price</p>
-              </div>
-            </div>
-
-            {/* Bottom left */}
-            <div className="absolute bottom-0 left-0 w-32 h-32 bg-gray-600 rounded-xl flex items-center justify-center group hover:bg-zappy-orange transition-colors duration-300">
-              <div className="text-center">
-                <div className="w-4 h-4 bg-zappy-orange rounded-full mx-auto mb-2 group-hover:bg-white"></div>
-                <p className="text-zappy-orange text-sm font-medium group-hover:text-white">Shop Fresh and fast</p>
-              </div>
-            </div>
+        {/* Feature Boxes */}
+        {features.map((feature, index) => (
+          <div key={index} className={`feature-box ${feature.position}`}>
+            <div className="feature-square" />
+            <div className={`arrow ${feature.position}`} />
+            <p className="feature-text">{feature.title}</p>
           </div>
-        </div>
-
-      
+        ))}
       </div>
     </section>
   );
