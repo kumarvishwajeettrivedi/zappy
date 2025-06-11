@@ -67,7 +67,7 @@ const HeroSection = () => {
       </div>
 
       {/* Curved bottom */}
-      <div className="absolute bottom-0 left-0 right-0 h-20 bg-white zappy-curve"></div>
+      <div className="absolute bottom-0 left-0 right-0 h-20 bg-#ff2254 zappy-curve"></div>
     </section>
   );
 };
