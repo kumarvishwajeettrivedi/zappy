@@ -8,10 +8,6 @@ const HeroSection = () => {
       {/* Decorative elements */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-10 w-8 h-8 border-2 border-white rounded-full animate-float"></div>
-        <div className="absolute top-40 right-20 w-6 h-6 border-2 border-white rounded-square rotate-45 animate-float" style={{animationDelay: '1s'}}></div>
-        <div className="absolute bottom-40 left-20 w-10 h-10 border-2 border-white rounded-full animate-float" style={{animationDelay: '2s'}}></div>
-        <div className="absolute top-60 left-1/3 w-4 h-4 border-2 border-white rounded-square animate-float" style={{animationDelay: '1.5s'}}></div>
-        <div className="absolute bottom-60 right-1/3 w-6 h-6 border-2 border-white rounded-full animate-float" style={{animationDelay: '0.5s'}}></div>
       </div>
 
       <div className="relative z-10 container mx-auto px-6 py-20 flex items-center min-h-screen">
