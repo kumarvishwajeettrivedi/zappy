@@ -49,6 +49,23 @@ const Footer = () => {
             <a href="#" className="hover:text-white transition-colors">Security</a>
             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
             <a href="#" className="hover:text-white transition-colors">Help & Support</a>
+            <div className="text-sm">
+              <p className="hover:text-white transition-colors font-semibold">Contact Us</p>
+              <ul className="mt-2 space-y-1 text-gray-300">
+                <li>
+                  <a href="mailto:office@logizee.com" className="hover:text-white transition-colors">
+                    office@logizee.com
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:office.logizee@gmail.com" className="hover:text-white transition-colors">
+                  office.logizee@gmail.com
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+
           </div>
         </div>
 
