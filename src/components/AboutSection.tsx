@@ -1,5 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./styles/aboutsection.css";
+import curveLine1 from '../assets/images/Line 4.png';
+import curveLine2 from '../assets/images/Line 3.png';
 
 const AboutSection = () => {
   const sectionRef = useRef(null);
@@ -31,6 +33,9 @@ const AboutSection = () => {
 
   return (
     <section className="about-section" ref={sectionRef}>
+        <img src={curveLine1} alt="decorative curve1" className="background-curve-line1" />
+        <img src={curveLine2} alt="decorative curve2" className="background-curve-line2" />
+
       <div className="about-container">
         {/* Center Text */}
         <div className={`about-text ${isVisible ? 'animate-fade-in' : ''}`}>

@@ -16,6 +16,30 @@
   align-items: center;
 }
 
+.background-curve-line1 {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  width: 60%;
+  max-width: none;
+  transform: translate(-65%, -30%);
+  opacity: 0.5;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.background-curve-line2 {
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  width: 60%;
+  rotate: 90%;
+  max-width: none;
+  transform: translate(-65%, -30%);
+  opacity: 0.3;
+  z-index: 0;
+  pointer-events: none;
+}
 .about-section::before {
   content: '';
   position: absolute;

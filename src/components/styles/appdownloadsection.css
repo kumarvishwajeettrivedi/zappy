@@ -10,9 +10,18 @@
 .app-download-section {
   padding: 8rem 1rem;
   background-color: #EEEDED;
+  z-index: 1000;
+}
+.app-download-section {
+  position: relative;
+  padding: 8rem 1rem;
+  background-color: #EEEDED;
+  overflow: hidden;
 }
 
 .app-download-card {
+  position: relative; /* This ensures it's inside stacking context */
+  z-index: 10; /* Make sure it's higher than the curve lines */
   background: #fff;
   height: 330px;
   border-radius: 2rem;
@@ -20,24 +29,55 @@
   max-width: 1100px;
   margin: 0 auto;
   box-shadow: 0px 4px 9.8px 1px rgba(194, 43, 43, 0.4);
- }
+}
+
+.background-curve-line3,
+.background-curve-line4 {
+  position: absolute;
+  z-index: 0; /* Ensures it stays behind content */
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.background-curve-line3 {
+  bottom: -50px; 
+  left: 60%;
+  width: 50%;
+  height: auto;
+}
+
+.background-curve-line4 {
+  bottom: 50px; 
+  left: -10%;
+  width: 50%;
+  height: auto;
+  transform: rotate(180deg);
+}
+
+
 
 .app-download-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 3rem;
+  z-index: 1000;
+
 }
 
 .app-download-heading {
   font-size: 2rem;
   font-weight: 600;
+  z-index: 1000;
+
   color: #111827;
   margin-bottom: 1rem;
 }
 
 .app-download-subheading {
   font-size: 1rem;
+  z-index: 1000;
+
   color: #4b5563;
   width: 15rem;
   line-height: 1.6;
@@ -54,6 +94,8 @@
 .download-btn img {
   width: 180px;
   height: auto;
+  z-index: 1000;
+
 }
 
 
@@ -62,11 +104,15 @@
     justify-content: center;
     margin-right: -15%;
     margin-bottom: 5%;
+    z-index: 1000;
+
   }
   
   .phone-image {
     max-width: 100%;
     width: 200px;
+    z-index: 1000;
+
     height: auto;
     object-fit: contain;
     border-radius: 2rem;
