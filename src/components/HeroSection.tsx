@@ -13,7 +13,7 @@ const HeroSection = () => {
           <div className="text-content">
             <p className="hero-title">Logizee</p>
             <p className="hero-subtitle">
-              One roof solution for all kinds of delivery need
+              One roof solution for all kinds of delivery needs
             </p>
             <p className="crafted-text">Crafted with ❤️ in Sikkim</p>
 
@@ -22,7 +22,7 @@ const HeroSection = () => {
               <img
                 src={playstoreIcon}
                 alt="Download on Google Play"
-                style={{ width: "230px", height: "auto", cursor: "pointer" }}
+                style={{ width: "200px", height: "auto", cursor: "pointer" }}
                 onClick={() => window.open("#", "_blank")}
               />
 

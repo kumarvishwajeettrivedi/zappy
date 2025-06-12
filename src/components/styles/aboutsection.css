@@ -171,19 +171,20 @@
 
 /* Different Category Backgrounds */
 .food-delivery {
-  background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+  background: linear-gradient(135deg, #cae8da, #badad3);
+
 }
 
 .medicine {
-  background: linear-gradient(135deg, #4ecdc4, #44a08d);
+  background: linear-gradient(135deg, #deb677, #e7994b);
 }
 
 .grocery {
-  background: linear-gradient(135deg, #a8e6cf, #7fcdcd);
+  background: linear-gradient(135deg, #79eaa0, #6bcb8b);
 }
 
 .fashion {
-  background: linear-gradient(135deg, #ff9a9e, #fecfef);
+  background: linear-gradient(135deg, #ebb2b4, #b686a7);
 }
 
 .image-overlay {
@@ -262,6 +263,18 @@
   animation: slideInBottomRight 1.8s ease-out forwards;
 }
 
+
+@keyframes slideInTopRight {
+  0% {
+    transform: translate(300px, -300px) rotate(20deg) scale(0.8);
+    opacity: 0;
+  } 
+  100% {
+    transform: translate(120px, -230px) rotate(2deg) scale(1);
+    opacity: 1;
+  }
+}
+
 /* Slide-in Animations */
 @keyframes slideInTopLeft {
   0% {
@@ -274,16 +287,7 @@
   }
 }
 
-@keyframes slideInTopRight {
-  0% {
-    transform: translate(300px, -300px) rotate(20deg) scale(0.8);
-    opacity: 0;
-  }
-  100% {
-    transform: translate(120px, -230px) rotate(2deg) scale(1);
-    opacity: 1;
-  }
-}
+
 
 @keyframes slideInBottomLeft {
   0% {

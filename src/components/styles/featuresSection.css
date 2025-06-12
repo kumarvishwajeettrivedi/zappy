@@ -8,117 +8,196 @@
 }
 
 .features-section {
-    position: relative;
-    background: linear-gradient(to right, #191919, #3c3c3c);
-    padding: 6rem 1rem;
-    text-align: center;
-    
-    border-bottom-left-radius: 50% -12%;
-    border-bottom-right-radius: 50% -12%;
-  }
-  
-  .features-title {
-    font-size: 3rem;
-    font-weight: 700;
-    color: white;
-    letter-spacing: 0.15rem;
-    margin-bottom: 4rem;
-  }
-   
-  .features-wrapper {
-    position: relative;
-    max-width: 1100px;
-    height: 500px;
-    margin: 0 auto;
-  }
-  
-  .center-mobile {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 250px;
-    height: 200px;
-    background: #d3d3d3;
-    border-radius: 20px;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-  }
-  
-  /* All feature boxes */
-  .feature-box {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .feature-square {
-    width: 80px;
-    height: 80px;
-    background-color: #ccc;
-    border-radius: 12px;
-    z-index: 2;
-  }
-  
-  .feature-text {
-    color: #ff7b00;
-    font-size: 0.9rem;
-    font-weight: 500;
-    margin-top: 0.5rem;
-    max-width: 120px;
-    text-align: center;
-  }
-  
-  /* Arrows: use pseudo-elements or SVG backgrounds later if needed */
-  .arrow {
-    width: 60px;
-    height: 60px;
-    background: transparent;
-    position: relative;
-  }
-  
-  .arrow::after {
-    content: "";
-    position: absolute;
-    border: 2px solid white;
-    border-radius: 50%;
-    width: 100%;
-    height: 100%;
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-    transform: rotate(45deg);
-  }
-  
-  /* Positioning each box */
-  .top-left {
-    top: 0;
-    left: 0;
-  }
-  
-  .center-left {
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-  }
-  
-  .bottom-left {
-    bottom: 0;
-    left: 0;
-  }
-  
-  .top-center {
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  
-  .top-right {
-    top: 0;
-    right: 0;
-  }
-  
-  .bottom-right {
-    bottom: 0;
-    right: 0;
-  }
-  
+  position: relative;
+  background: linear-gradient(to right, #111111, #373636);
+  padding: 6rem 1rem;
+  text-align: center;
+  border-bottom-left-radius: 50% -12%;
+  border-bottom-right-radius: 50% -12%;
+}
+
+.features-title {
+  margin-top: -3rem;
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 0.85rem;
+}
+
+.features-wrapper {
+  position: relative;
+  max-width: 1100px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.center-mobile {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 350px;
+  height: 250px;
+  background: white;
+  border-radius: 30px;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 -2px 8px rgba(255, 255, 255, 0.4);
+  z-index: 1;
+}
+
+.feature-box {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature-square {
+  width: 100px;
+  height: 100px;
+  background-color: #ccc;
+  border-radius: 12px;
+  z-index: 2;
+}
+
+.text-wrapper {
+  position: absolute;
+  max-width: 140px;
+  text-align: center;
+}
+
+.arrow-image {
+  position: absolute;
+  width: 30px;
+  height: auto;
+  z-index: 0;
+}
+
+/* Individual arrow positioning */
+.top-left-arrow {
+  top: 90px;
+  left: 162px;
+  width: 12%;
+  transform: rotate(-24deg);
+}
+
+.center-left-arrow {
+  top: 130px;
+  left: 20px;
+  width: 12%;
+  transform: rotate(34deg);
+}
+
+.bottom-left-arrow {
+  bottom: 60px;
+  left: 150px;
+  width: 24%;
+  transform: rotate(40deg);
+}
+
+.top-center-arrow {
+  top: 10px;
+  left: 18%;
+  width: 12%;
+  transform: translateX(-50%) rotate(-180deg);
+}
+
+.top-right-arrow {
+  top: 120px;
+  right: 14px;
+  transform: rotate(-14deg);
+}
+
+.bottom-right-arrow {
+  bottom: 48px;
+  right: 150px;
+  width: 22%;
+  transform: rotate(-90deg);
+}
+
+.feature-text {
+  color: #ff7b00;
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.2;
+  transition: transform 0.3s ease;
+}
+
+/* Individual positioning and rotation */
+.top-left .text-wrapper {
+  top: 180px;
+  left: 40px;
+  transform: rotate(-2deg);
+}
+
+.center-left .text-wrapper {
+  top: 95%;
+  left: 15px;
+  width: 60%;
+  transform: translateY(-50%) rotate(-2deg);
+}
+
+.bottom-left .text-wrapper {
+  bottom: -5px;
+  left: 60%;
+  width: 50%;
+  transform: rotate(-6deg);
+}
+
+.top-center .text-wrapper {
+  top: -20px;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%) rotate(5deg);
+}
+
+.top-right .text-wrapper {
+  top: 175px;
+  right: -40px;
+  width: 60%;
+  transform: rotate(4deg);
+}
+
+.bottom-right .text-wrapper {
+  bottom:10px;
+  right: 140px;
+  width: 60%;
+  transform: rotate(5deg);
+}
+
+
+
+
+/* Box positions */
+.top-left {
+  top: 20%;
+  left: 30%;
+}
+
+.center-left {
+  top: 20%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.bottom-left {
+  bottom: 0;
+  left: 0;
+}
+
+.top-center {
+  top: 20%;
+  left: 60%;
+  transform: translateX(-50%);
+}
+
+.top-right {
+  top: 0;
+  right: 0;
+}
+
+.bottom-right {
+  bottom: 0;
+  right: 0;
+}

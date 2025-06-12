@@ -15,7 +15,7 @@ what We Offer ?      </h3>
         {/* Left Block */}
         <div className="whatweoffer-item">
           <p>
-            Send anything, anywhere — fast, secure, and affordable with Zappy’s delivery solution.
+            Send anything, anywhere — fast, secure, and affordable with Logizee delivery solution.
           </p>
           <div className="illustration-box">
               <img

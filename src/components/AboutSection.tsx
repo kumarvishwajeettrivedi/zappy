@@ -55,24 +55,27 @@ const AboutSection = () => {
 
         </div>
 
-        {/* Animated Image Boxes - Professional Images */}
-        <div className={`about-image-box top-left-box ${isVisible ? 'animate-in' : ''}`}>
-          <div className="image-content food-delivery">
+        <div className={`about-image-box top-right-box ${isVisible ? 'animate-in' : ''}`}>
+          <div className="image-content medicine">
             <div className="image-overlay">
-              <h4>Food Delivery</h4>
-              <p>Fresh & Fast</p>
+            <h4>Food Delivery</h4>
+            <p>Fresh & Fast</p>
+
             </div>
           </div>
         </div>
 
-        <div className={`about-image-box top-right-box ${isVisible ? 'animate-in' : ''}`}>
-          <div className="image-content medicine">
+        {/* Animated Image Boxes - Professional Images */}
+        <div className={`about-image-box top-left-box ${isVisible ? 'animate-in' : ''}`}>
+          <div className="image-content food-delivery">
             <div className="image-overlay">
-              <h4>Medicine</h4>
-              <p>Health First</p>
+            <h4>Parcel</h4>
+            <p>Anything Anywhere</p>
             </div>
           </div>
         </div>
+
+       
 
         <div className={`about-image-box bottom-left-box ${isVisible ? 'animate-in' : ''}`}>
           <div className="image-content grocery">
