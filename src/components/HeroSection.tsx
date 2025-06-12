@@ -2,7 +2,7 @@ import React from "react";
 import "./styles/herosection.css";
 import playstoreIcon from '../assets/images/playstore.png';
 import doodlePath from '../assets/images/Group 16.png';
-
+import mainScreen from '../assets/images/main-screen.png';
 
 const HeroSection = () => {
   return (
@@ -35,15 +35,11 @@ const HeroSection = () => {
   </div>
 
           {/* Right Side - QR Phone UI */}
-          <div className="mockup-wrapper">
-            <div className="mockup-box">
-              <div className="mockup-content">
-                <p className="qr-title">Scan the QR code</p>
-                <p className="qr-subtitle">to Download the App</p>
-              </div>
-            </div>
-            <div className="phone-notch"></div>
-          </div>
+          {/* Right Side - App Screenshot Image */}
+<div className="mockup-wrapper">
+  <img src={mainScreen} alt="App Preview" className="app-screenshot" />
+</div>
+
         </div>
       </div>
 

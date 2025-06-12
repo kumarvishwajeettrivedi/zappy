@@ -27,9 +27,18 @@ const Footer = () => {
           <div>
             <h4 className="footer-heading">Social Links</h4>
             <div className="footer-social">
-              <div className="footer-icon">f</div>
+
+
+              <a
+                href="https://www.instagram.com/zappy.live/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="footer-icon"
+              >
+                i
+              </a>
               <div className="footer-icon">t</div>
-              <div className="footer-icon">i</div>
+              <div className="footer-icon">f</div>
               <div className="footer-icon">y</div>
             </div>
           </div>

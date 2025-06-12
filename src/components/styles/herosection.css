@@ -59,6 +59,20 @@
     height: 580px;
 
   }
+  .app-screenshot {
+    max-width: 100%;
+    width: 300px;
+    height: auto;
+    border-radius: 2rem;
+    background-color: white; /* optional: adds contrast if image has transparency */
+    box-shadow:
+      0 8px 16px rgba(0, 0, 0, 0.3),  /* strong drop shadow */
+      0 2px 4px rgba(0, 0, 0, 0.2),   /* soft shadow */
+      inset 0 0 0 1px rgba(0, 0, 0, 0.05); /* subtle inner border */
+    animation: slideUpFadeIn 1.2s ease-out 0.3s;
+    animation-fill-mode: both;
+  }
+  
   
   
   .text-content {
