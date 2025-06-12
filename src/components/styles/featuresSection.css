@@ -1,8 +1,11 @@
 .features-section {
     position: relative;
-    background: linear-gradient(to right, #1e1e1e, #3c3c3c);
+    background: linear-gradient(to right, #191919, #3c3c3c);
     padding: 6rem 1rem;
     text-align: center;
+    
+    border-bottom-left-radius: 50% -12%;
+    border-bottom-right-radius: 50% -12%;
   }
   
   .features-title {
@@ -12,7 +15,7 @@
     letter-spacing: 0.15rem;
     margin-bottom: 4rem;
   }
-  
+   
   .features-wrapper {
     position: relative;
     max-width: 1100px;

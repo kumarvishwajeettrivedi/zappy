@@ -11,7 +11,7 @@ const features = [
     position: "center-left",
   },
   {
-    title: "Shop Fresh and fast",
+    title: "Shop Fresh and fast", 
     position: "bottom-left",
   },
   {

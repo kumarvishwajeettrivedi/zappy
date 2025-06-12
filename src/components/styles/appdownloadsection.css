@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap');
+
+* {
+  font-family: 'Sen', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.app-download-section {
+  padding: 8rem 1rem;
+  background-color: #EEEDED;
+}
+
+.app-download-card {
+  background: #fff;
+  border-radius: 3rem;
+  padding: 3rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+}
+
+.app-download-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 3rem;
+}
+
+.app-download-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+.app-download-subheading {
+  font-size: 1rem;
+  color: #4b5563;
+  width: 15rem;
+  line-height: 1.6;
+}
+
+.download-btn {
+  border: none;
+  background: none;
+  padding: 0;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.download-btn img {
+  width: 180px;
+  height: auto;
+}
+
+
+.app-download-right {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -20%;
+    margin-right: -15%;
+  }
+  
+  .phone-image {
+    max-width: 100%;
+    width: 280px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 2rem;
+  }
+/* Responsive */
+@media (max-width: 768px) {
+  .app-download-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .app-download-right {
+    margin-top: 2rem;
+  }
+
+  .app-download-heading {
+    font-size: 2rem;
+  }
+
+  .app-download-subheading {
+    font-size: 1.1rem;
+  }
+}

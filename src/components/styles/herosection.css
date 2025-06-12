@@ -131,7 +131,7 @@
   
   
   .mockup-box {
-    width: 21rem;
+    width: 20rem;
     height: 42rem;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(6px);
@@ -170,7 +170,7 @@
   .scroll-indicator {
     position: absolute;
     bottom: 2rem;
-    left: 47%;
+    left: 50%;
     transform: translateX(-50%);
     display: flex;
     flex-direction: row; /* changed from column */

@@ -1,37 +1,49 @@
 import React from "react";
+import "./styles/whatweoffer.css";
+import cityparcel from '../assets/images/cityparcel.png';
+import homedelivery from '../assets/images/homedelivery.png';
+
 
 const WhatWeOffer = () => {
   return (
-    <div className="mt-32">
-      <div className="bg-white rounded-3xl p-12 max-w-6xl mx-auto">
-        <div className="text-center mb-12">
-          <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
-            What we offer?
-          </h3>
+    <div className="container1">
+    <section className="whatweoffer-section">
+      <h3 className="whatweoffer-heading">
+what We Offer ?      </h3>
+
+      <div className="whatweoffer-grid">
+        {/* Left Block */}
+        <div className="whatweoffer-item">
+          <p>
+            Send anything, anywhere — fast, secure, and affordable with Zappy’s delivery solution.
+          </p>
+          <div className="illustration-box">
+              <img
+                src={homedelivery}
+                alt="Send Parcel Illustration"
+                className="whatweoffer-image"
+              />
+          </div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12">
-          {/* Left side */}
-          <div className="text-center">
-            <p className="text-gray-600 text-lg mb-8 leading-relaxed">
-              We help you send a parcel from one place to another, making you more connected with Zappy.
-            </p>
-            <div className="w-64 h-48 bg-gray-100 rounded-2xl mx-auto flex items-center justify-center">
-              <span className="text-gray-400">Illustration Placeholder</span>
-            </div>
-          </div>
+        {/* Divider */}
+        <div className="whatweoffer-divider" />
 
-          {/* Right side */}
-          <div className="text-center">
-            <p className="text-gray-600 text-lg mb-8 leading-relaxed">
-              An online platform for local businesses to send any parcel hassle-free, without worrying about huge commissions.
-            </p>
-            <div className="w-64 h-48 bg-gray-100 rounded-2xl mx-auto flex items-center justify-center">
-              <span className="text-gray-400">Illustration Placeholder</span>
-            </div>
+        {/* Right Block */}
+        <div className="whatweoffer-item">
+          <p>
+            Enable your local business to deliver parcels without worrying about heavy commissions.
+          </p>
+          <div className="illustration-box">
+              <img
+                src={cityparcel}
+                alt="Business Parcel Illustration"
+                className="whatweoffer-image"
+              />
           </div>
         </div>
       </div>
+    </section>
     </div>
   );
 };

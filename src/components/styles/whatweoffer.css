@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap');
+
+* {
+  font-family: 'Sen', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container1{
+    background: linear-gradient(to right, #191919, #3c3c3c);
+
+}
+.whatweoffer-section {
+    position: relative;
+    min-height: 70vh;
+    background-color: white;
+    overflow: hidden;
+    color: white;
+    border-top-left-radius: 50% 12%;
+    border-top-right-radius: 50% 12%;
+   
+}
+
+.whatweoffer-heading {
+  font-size: 2.5rem;
+  margin-top: 3rem;
+  font-weight: 700;
+  color: #232832;
+
+  text-align: center;
+  margin-bottom: 5rem;
+  text-transform: uppercase;
+}
+
+.whatweoffer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1px 1fr;
+  gap: 2rem;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.whatweoffer-item {
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.whatweoffer-item p {
+  font-size: 0.95rem;
+  color: #575555;
+  
+  margin-bottom: 4rem;
+  line-height: 1.75;
+  font-weight: 400;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.illustration-box {
+  width: 100%;
+  max-width: 16rem;
+  height: 12rem;
+  border-radius: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  margin: 0 auto;
+
+}
+
+.whatweoffer-divider {
+  height: 100%;
+  width: 1px;
+  margin-top: 2rem;
+  background-color: #dcdfe2;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .whatweoffer-heading {
+    font-size: 1.8rem;
+  }
+
+  .whatweoffer-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .whatweoffer-divider {
+    display: none;
+  }
+
+  .whatweoffer-item p {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+}
