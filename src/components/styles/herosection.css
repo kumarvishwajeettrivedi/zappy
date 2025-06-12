@@ -67,7 +67,7 @@
   
   .hero-title {
     font-family: "Sen", sans-serif, bolder;
-    font-size: 6.2rem;
+    font-size: 6rem;
     font-weight:800;
 
     margin-bottom: 2.8rem;
@@ -77,7 +77,7 @@
  
   
   .hero-subtitle {
-    font-size: 2.1rem;
+    font-size: 1.8rem;
     opacity: 0.8;
     width: 100%;
     font-weight: 300;
