@@ -46,13 +46,13 @@
 }
 
 .whatweoffer-item p {
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   color: #575555;
   
   margin-bottom: 4rem;
   line-height: 1.75;
   font-weight: 400;
-  max-width: 90%;
+  max-width: 60%;
   margin-left: auto;
   margin-right: auto;
 }

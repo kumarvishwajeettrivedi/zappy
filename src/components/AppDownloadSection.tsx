@@ -28,7 +28,7 @@ const AppDownloadSection = () => {
             <img
               src={phonedownload}
               alt="App Demo"
-              style={{ width: "500px", height: "auto", cursor: "pointer" }}
+              style={{ width: "480px", height: "auto", cursor: "pointer" }}
  
               className="phone-image"
             />

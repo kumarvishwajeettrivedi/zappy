@@ -35,7 +35,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Learn More */}
+        {/* Learn More aligned under "For Businesses" visually */}
         <div className="footer-learn">
           <h4 className="footer-heading">Learn More</h4>
           <div className="footer-links">
@@ -56,7 +56,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Copyright */}
+        {/* Bottom */}
         <div className="footer-bottom">
           <p>
             By continuing past this page, you agree to our Terms of Service,
