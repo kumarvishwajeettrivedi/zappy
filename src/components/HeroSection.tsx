@@ -13,7 +13,7 @@ const HeroSection = () => {
           <div className="text-content">
             <p className="hero-title">Logizee</p>
             <p className="hero-subtitle">
-              One roof solution for all kinds of delivery needs
+              One roof solution for all kind of delivery needs
             </p>
             <p className="crafted-text">Crafted with ❤️ in Sikkim</p>
 
