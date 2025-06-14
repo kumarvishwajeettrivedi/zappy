@@ -218,6 +218,8 @@
   @media (max-width:360px){
  
     .hero-section {
+      height: 24vh;
+
       color: white;
       border-bottom-left-radius:00% 0%;
       border-bottom-right-radius:00% 0%;

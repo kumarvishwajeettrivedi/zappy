@@ -532,7 +532,7 @@
   .about-section {
     position: relative;
     padding: 1rem 1rem;
-    min-height: 96vh;
+    height: 23vh;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -791,7 +791,7 @@
   }
   
   .top-right-box.animate-in {
-    top: 14%;
+    top: 18%;
     right: 38%;
     opacity: 1;
     transform: rotate(6deg);
@@ -799,7 +799,7 @@
   }
   
   .bottom-left-box.animate-in {
-    bottom: 10%;
+    bottom: 8%;
     left: 30%;
     opacity: 1;
     transform: rotate(6deg);
@@ -807,7 +807,7 @@
   }
   
   .bottom-right-box.animate-in {
-    bottom: 14%;
+    bottom: 4%;
     right: 64%;
     opacity: 1;
     transform: rotate(-6deg);
