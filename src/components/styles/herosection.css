@@ -216,9 +216,10 @@
   }
 
   @media (max-width:360px){
- 
+
+    
     .hero-section {
-      height: 24vh;
+      height: 102vh;
 
       color: white;
       border-bottom-left-radius:00% 0%;
@@ -359,14 +360,14 @@
       }
       72% {
         top: 54%;
-        left: 90%;
+        left: 98%;
         opacity: 0.9;
         transform: scale(1.05) rotate(6deg) ;
       }
     
       78% {
         top: 66%;
-        left: 112%;
+        left: 115%;
         opacity: 0.9;
         transform: scale(1.1) rotate(7deg) scaleX(-1);
       }

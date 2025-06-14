@@ -119,6 +119,7 @@
 @media (max-width: 360px) {
   .footer {
     padding: 2rem 0;
+    padding-bottom: 4rem;
   }
 
   .footer-container {
@@ -135,17 +136,17 @@
   .footer-heading {
     font-size: 1.2rem;
     font-weight: 500;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.1rem;
   }
 
   .footer-title {
     font-size: 2.6rem;
     font-weight: 800;
-    margin-bottom: 0.8rem;
+    margin-bottom: 0rem;
   }
 
   .footer-links {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     display: flex;
     flex-direction: column;
     gap: 0.6rem;

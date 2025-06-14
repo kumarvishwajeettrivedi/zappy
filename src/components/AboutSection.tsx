@@ -6,6 +6,7 @@ import choth2 from '../assets/images/cloths1.jpg';
 import food from '../assets/images/food.png';
 import grocery from '../assets/images/grocery-main.png';
 import parcel from '../assets/images/parcel.png';
+import playstore from '../assets/images/playstoreicon.png';
 
 const AboutSection = () => {
   const sectionRef = useRef(null);
@@ -116,6 +117,34 @@ const AboutSection = () => {
         <div className="bg-decoration-1"></div>
         <div className="bg-decoration-2"></div>
       </div>
+
+      <div className="download-button-container">
+  <a 
+    href="/#" 
+    className="download-button"
+    onClick={(e) => {
+      e.preventDefault();
+      window.location.href = '/#';
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }}
+  >
+    <span className="button-text">Download the app</span>
+    <span className="play-store-icon">
+      <img 
+        src={playstore} 
+        alt="Play Store" 
+        className="play-store-image" 
+        style={{ 
+          width: '100%',
+          height: '100%',
+          scale:'1.5',
+          objectFit: 'cover' 
+        }} 
+      />
+    </span>
+  </a>
+</div>
+
     </section>
   );
 };

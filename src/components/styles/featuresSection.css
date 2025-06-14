@@ -271,7 +271,8 @@
 
 @media (max-width: 360px) {
   .center-mobile {
-
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     width: 300px;
 top: 95.5%;   
  z-index: 1;
@@ -463,7 +464,7 @@ top: 95.5%;
 
 .top-center {
   top: 40%;
-  left: 80%;
+  left: 78%;
   transform: translateX(-50%);
 }
 

@@ -16,7 +16,7 @@ const AppDownloadSection = () => {
 
           {/* Left Content */}
           <div className="app-download-left">
-            <h2 className="app-download-heading">Get the app on</h2>
+            <h2 className="app-download-heading">Get the app</h2>
             <p className="app-download-subheading">
               Everything Nearby, Instantly at Your Door
             </p>
