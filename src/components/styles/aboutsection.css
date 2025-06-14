@@ -500,7 +500,7 @@
   .image-overlay h4 {
     font-size: 0.75rem;
   }
-  
+   
   .image-overlay p {
     font-size: 0.65rem;
   }
@@ -860,7 +860,7 @@
     height: 100%;
     background: linear-gradient(
       135deg, 
-      rgba(255, 255, 255, 0.2) 0%, 
+      rgba(245, 146, 146, 0.2) 0%, 
       rgba(255, 255, 255, 0.05) 100%
     );
     z-index: 1;
