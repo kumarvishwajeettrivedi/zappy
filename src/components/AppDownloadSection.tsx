@@ -24,6 +24,7 @@ const AppDownloadSection = () => {
             <img
                 src={playstoreIcon}
                 alt="Download on Google Play"
+                className="playstoreimage"
                 style={{ width: "180px", height: "auto", cursor: "pointer" }}
                 onClick={() => window.open("#", "_blank")}
               />

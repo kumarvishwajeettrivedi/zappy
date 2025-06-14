@@ -3,7 +3,7 @@ import "./styles/herosection.css";
 import playstoreIcon from '../assets/images/playstore.png';
 import doodlePath from '../assets/images/Group 16.png';
 import mainScreen from '../assets/images/main-screen.png';
-
+import deliverycap from '../assets/images/delivery-cap.png';
 const HeroSection = () => {
   return (
     <section className="hero-section">
@@ -22,6 +22,7 @@ const HeroSection = () => {
               <img
                 src={playstoreIcon}
                 alt="Download on Google Play"
+                className="plastoreimage"
                 style={{ width: "200px", height: "auto", cursor: "pointer" }}
                 onClick={() => window.open("#", "_blank")}
               />
@@ -33,6 +34,9 @@ const HeroSection = () => {
 <div className="doodle-container">
     <img src={doodlePath} alt="doodle-animation" />
   </div>
+  
+  <img src={deliverycap} alt="doodle-animation" className="deliverycap" />
+
 
           {/* Right Side - QR Phone UI */}
           {/* Right Side - App Screenshot Image */}
@@ -53,7 +57,6 @@ const HeroSection = () => {
 
 
       {/* Bottom Curve */}
-      <div className="bottom-curve"></div>
     </section>
   );
 };
