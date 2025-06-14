@@ -191,3 +191,148 @@
   transform: rotate(180deg);
 }
 }
+
+@media (max-width: 480px) {
+  .app-download-section {
+    padding: 4rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+  }
+  
+  .app-download-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .app-download-right {
+    width: 100%;
+    transform: scale(0.96);
+    display: flex;
+    justify-content: center;
+    margin-top: clamp(-1rem, -0.5vh, 1rem); /* auto-adjusts based on screen height */
+  }
+  
+  .playstoreimage {
+    display: none; /* Hide image on all mobile */
+  }
+  
+  .app-download-heading {
+    font-size: clamp(1.3rem, 2vw, 1.8rem);
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    line-height: 1.3;
+    color: #111;
+  }
+  
+  .app-download-subheading {
+    font-size: clamp(0.9rem, 1.5vw, 1rem);
+    font-weight: 400;
+    text-align: center;
+    width: 100%;
+    opacity: 0.85;
+    color: #333;
+  }
+  
+  .background-curve-line3,
+  .background-curve-line4 {
+    position: absolute;
+    z-index: 0;
+    opacity: 0.4;
+    pointer-events: none;
+  }
+  
+  .background-curve-line3 {
+    bottom: -20vh;
+    left: 90%;
+    width: 50%;
+    height: auto;
+  }
+  
+  .background-curve-line4 {
+    bottom: 10vh;
+    left: 90%;
+    width: 70%;
+    height: auto;
+    transform: rotate(180deg);
+  }
+  
+}
+
+@media (max-width: 445px) {
+  .app-download-section {
+    padding: 4rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+  }
+  
+  .app-download-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .app-download-right {
+    width: 100%;
+    transform: scale(0.96);
+    display: flex;
+    justify-content: center;
+    margin-top: clamp(-1rem, -0.5vh, 1rem); /* auto-adjusts based on screen height */
+  }
+  
+  .playstoreimage {
+    display: none; /* Hide image on all mobile */
+  }
+  
+  .app-download-heading {
+    font-size: clamp(1.3rem, 2vw, 1.8rem);
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    line-height: 1.3;
+    color: #111;
+  }
+  
+  .app-download-subheading {
+    font-size: clamp(0.9rem, 1.5vw, 1rem);
+    font-weight: 400;
+    text-align: center;
+    width: 100%;
+    opacity: 0.85;
+    color: #333;
+  }
+  
+  .background-curve-line3,
+  .background-curve-line4 {
+    position: absolute;
+    z-index: 0;
+    opacity: 0.4;
+    pointer-events: none;
+  }
+  
+  .background-curve-line3 {
+    bottom: -20vh;
+    left: 90%;
+    width: 50%;
+    height: auto;
+  }
+  
+  .background-curve-line4 {
+    bottom: 10vh;
+    left: 90%;
+    width: 70%;
+    height: auto;
+    transform: rotate(180deg);
+  }
+}  

@@ -398,7 +398,189 @@
     }
     
   }    
+  @media (max-width:390px){
+
+    
+    .hero-section {
+      height: 102vh;
+
+      color: white;
+      border-bottom-left-radius:00% 0%;
+      border-bottom-right-radius:00% 0%;
+    }
+    
+    .container {
+      position: relative;
+      z-index: 10;
+      margin: auto;
+      padding: 1rem 1rem;
+      display: flex;
+      align-items: center;
+      min-height: 30vh;
+    }
+    
+    .content-grid {
+      display: grid;
+      grid-template-columns:1fr; /* 3 columns: text | doodle | mockup */
+      width: 100%;
+      align-items: left;
+      text-align: left;
+    }
+    
+    
+    
+    .doodle-container {
+   
+     z-index: -100;
+      align-items: center;
+      filter: brightness(1.4) contrast(0.85) grayscale(0.3);
+      animation-fill-mode: both;
+      position: absolute;
+      top: 32%;
+    right: 7%;
+      scale: 0.5;
+      /* Remove position: absolute */
+      /* Let it behave as a middle column item */
+    }
+    .plastoreimage{
+      scale: 0.8;
+      margin-left: -7.7%;
+    }
+     
  
+    
+    .doodle-container img {
+      width:280px;
+      height: 280px;
+      scale: 0.95;
+    }
+
+
+    .app-screenshot {
+      display: none;
+    }
+    
+    
+    
+    .text-content {
+      animation: fadeIn 1s ease-in-out;
+    }
+    
+    .hero-title {
+      font-family: "Sen", sans-serif, bolder;
+      font-size: 3.8rem;
+      font-weight:800;
+      margin-top: 2rem;
+      margin-bottom: 1.4rem;
+      line-height: 1.2;
+    }
+    
+   .download-text{
+    display: none;
+   }
+    
+    .hero-subtitle {
+      font-size: 1.4rem;
+      opacity: 0.9;
+      width: 100%;
+      font-weight: 300;
+      word-spacing: 0.2rem;
+      margin-bottom: 0.6rem;
+    }
+    
+    .crafted-text {
+      font-size:0.95rem;
+      opacity: 0.8;
+      margin-top: 1.6rem;
+      font-weight: 300;
+      margin-bottom: 24rem;
+    }
+    
+    .download-section {
+      font-size: 1rem;
+      opacity: 0.9;
+     margin-top: -16%;
+      font-weight: 300;
+ 
+    }
+  
+    .scroll-indicator {
+     display: none;
+
+    }
+    
+    .scroll-text {
+     display: none;
+    }
+    
+    .arrow-down {
+      display: none;
+    }
+
+    .deliverycap {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 180px;
+      height: auto;
+      animation: moveCap 2s cubic-bezier(0.1, 0, 0.2, 1) forwards;
+      z-index: 50;
+      opacity: 0;
+    }
+    
+    @keyframes moveCap {
+      0% {
+        top: 48%;
+        left: -38%;
+        transform: scale(0.72) rotate(0deg);
+        opacity: 0.8;
+      }
+    
+      68% {
+        top: 54%;
+        left: 95%;
+        opacity: 0.9;
+        transform: scale(1.05) rotate(5deg);
+      }
+    
+      72% {
+        top: 54%;
+        left: 98%;
+        opacity: 0.9;
+        transform: scale(1.05) rotate(6deg);
+      }
+    
+      78% {
+        top: 66%;
+        left: 115%;
+        opacity: 0.9;
+        transform: scale(1.1) rotate(7deg) scaleX(-1);
+      }
+    
+      88% {
+        top: calc(100vh - 28vh);  /* was 210px */
+        left: calc(100vw - 10vw); /* was 170px */
+        opacity: 0.9;
+        transform: scale(1.15) rotate(3deg) scaleX(-1);
+      }
+    
+      94% {
+        top: calc(100vh - 26.6vh);  /* was 200px */
+        left: calc(100vw - 10.3vw); /* was 175px */
+        opacity: 1;
+        transform: scale(1.17) rotate(1deg) scaleX(-1);
+      }
+    
+      100% {
+        top: calc(100vh - 26.6vh);  /* was 200px */
+        left: calc(100vw - 10.6vw); /* was 180px */
+        transform: scale(1.2) rotate(0deg) scaleX(-1);
+        opacity: 1;
+      }
+    }
+    
+    
+  }   
  
   @media (max-width:480px){
 
@@ -438,9 +620,9 @@
       filter: brightness(1.4) contrast(0.85) grayscale(0.3);
       animation-fill-mode: both;
       position: absolute;
-      top: 32%;
-      left: 7%;
-      scale: 1;
+      top: 34%;
+      left: 16%;
+      scale: 1.1;
       /* Remove position: absolute */
       /* Let it behave as a middle column item */
     }
@@ -477,7 +659,9 @@
       line-height: 1.2;
     }
     
-   
+   .download-text{
+    display: none;
+   }
     
     .hero-subtitle {
       font-size: 1.4rem;
@@ -496,10 +680,10 @@
       margin-bottom: 24rem;
     }
     
-    .download-section .download-text {
+    .download-section {
       font-size: 1rem;
       opacity: 0.9;
-      margin-bottom: -8rem;
+     margin-top: -20%;
       font-weight: 300;
  
     }

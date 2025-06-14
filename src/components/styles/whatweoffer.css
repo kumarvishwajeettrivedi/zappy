@@ -136,4 +136,63 @@
   }
 }
 
+@media (max-width: 480px) {
+  .container1 {
+    background-color: #ffffff;
+  }
+
+  .whatweoffer-section {
+    position: relative;
+    min-height: 30vh;
+    background-color: #ffffff;
+    overflow: hidden;
+    color: #232832;
+    border-top-left-radius: 0% 12%;
+    border-top-right-radius: 0% 12%;
+    padding: 2rem 1rem;
+  }
+
+  .whatweoffer-heading {
+    font-size: 1.4rem;
+    margin: 0.7rem 0 3rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: #232832;
+  }
+
+  .whatweoffer-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.2rem;
+    padding: 0;
+  }
+
+  .whatweoffer-item {
+    text-align: center;
+    padding: 0 0.6rem;
+  }
+  .whatweoffer-image{
+    width: 200px;
+    margin-top: 4%;
+    height: auto;
+
+  }
+
+  .whatweoffer-item p {
+    font-size: 0.95rem;
+    color: #575555;
+    line-height: 1.6;
+    font-weight: 400;
+    max-width: 90%;
+    margin: 0 auto 1rem;
+  }
+
+
+  .whatweoffer-divider {
+    display: none; /* Hide divider on mobile for cleaner stacking */
+  }
+}
+
 
